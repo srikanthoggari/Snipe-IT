@@ -8,7 +8,7 @@ jobs:
  build:
   name:CI/CD-snipeit
   runs-on:ubuntu-latest
-  steps:
+steps:
   -name:executing remote ssh commands  
 using key
    uses:appleboy/ssh-action@master
