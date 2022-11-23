@@ -8,12 +8,11 @@ jobs:
  build:
   name:CI/CD-snipeit
   runs-on:ubuntu-latest
-steps:
-  -name:executing remote ssh
-commands using key
-   uses:appleboy/ssh
--action@master
-    with:
+  steps:
+  -name:executing remote ssh commands  
+using key
+   uses:appleboy/ssh-action@master
+   with:
      host:13.234.33.34
      username:ubuntu
      key:${{secrets.KEY}}
