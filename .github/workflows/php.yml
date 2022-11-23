@@ -11,7 +11,7 @@ jobs:
 steps:
   -name:executing remote ssh commands using key
    uses:appleboy/ssh-action@master
-     with:
+ with:
      host:13.234.33.34
      username:ubuntu
      key:${{secrets.KEY}}
