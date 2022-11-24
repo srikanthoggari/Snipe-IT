@@ -18,7 +18,7 @@ jobs:
     username: ubuntu
     key: ${{secrets.key}}
     port: 22
-    script:|
+    script: |
        whoami
        cd/var/www/snipe-it
        sudo git pull origin main
