@@ -6,18 +6,18 @@ on:
 
 jobs:
   build:
-    name:CI/CD-snipeit
+    name: CI/CD-snipeit
     runs-on: ubuntu-latest
 
     steps:
-    - name:executingremote ssh commands 
+    - name: executingremote ssh commands 
   using key    
-    uses:appleboy/ssh-action@master
+    uses: appleboy/ssh-action@master
     with:
-    host:52.66.187.252
-    username:ubuntu
-    key:${{secrets.key}}
-    port:22
+    host: 52.66.187.252
+    username: ubuntu
+    key: ${{secrets.key}}
+    port: 22
     script:|
        whoami
        cd/var/www/snipe-it
